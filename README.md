@@ -1,6 +1,6 @@
 # Demystify-the-Unknowns
 
-[Paper](Demystify_the_Unknowns.pdf)
+[[Paper]](Demystify_the_Unknowns.pdf)
 
 Sarthak, Shu
 
