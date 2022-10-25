@@ -1,4 +1,5 @@
-# A-Closer-Look-at-Unknown-Recognition
+# A-Closer-Look-at-Unknown-Recognition 
+A study on Open-Set-Recognition
 
 [[Paper]](A_Closer_Look_at_Unknown_Recognition.pdf)
 
