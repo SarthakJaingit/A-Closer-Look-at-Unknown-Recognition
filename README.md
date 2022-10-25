@@ -1,14 +1,13 @@
-# Demystify-the-Unknowns
+# A-Closer-Look-at-Unknown-Recognition
 
-[[Paper]](Demystify_the_Unknowns.pdf)
+[[Paper]](A_Closer_Look_at_Unknown_Recognition.pdf)
 
 Sarthak, Shu
 
 In this repo, I researched the performance of OpenGAN and MaxLogits on a variety of evaluation tasks. The notebooks above showcase the data-loading, training, and evaluation of these algorithms. 
 
 **Abstract:**
-Computer Vision models will often face image data that is out-of-distribution from its train set. Coined as Open-Set Recognition, previous research has created algorithms that exploit K-way classification to classify such out-of-distribution images. 1) MaxLogits utilizes the values obtained from the final nodes of trained CNN classifier while 2) OpenGAN generates its own fake data to train a discriminator that can focus on the features of an image. In our paper, we train OpenGAN and MaxLogits when K=180 and when K=6. We then study the performance of these four models on 3 different types of out-of-distribution data. We find that OpenGAN outperforms MaxLogits in the Gaussian/Uniform Noise and Noise as Unknown Evaluations although the difference in AUPR and AUROC is wider when K=180. For Cross-Dataset Evaluation, OpenGAN again outperforms MaxLogits when the out-of-distribution set is SVHN or EuroSAT, but when it is MNIST, MaxLogits performs better. 
-
+Computer Vision models often face imagery data that is from unknown classes that are not seen in the training set. To recognize such unknown images, previous research has created algorithms that exploit labeled data w.r.t $K$ categorical classes. In particular, the state-of-the-art method MaxLogits uses the maximum value of the logits to measure the open-set likelihood, while OpenGAN learns a discriminator as the open-set likelihood function by learning with generated fake open-set training data. In our paper, we compare OpenGAN and MaxLogits in scenarios that we have large and small numbers of classes. We then study their performance on three different types of unknown data: Gaussian noise, uniform noise, heavily-perturbed images, unseen images from other datasets. Experiments show that OpenGAN outperforms MaxLogits in almost all unknown types.
 
 Jain Sarthak
 
